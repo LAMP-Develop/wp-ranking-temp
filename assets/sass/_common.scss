@@ -1,0 +1,32 @@
+body {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+p {
+  font-size: $font-size-sm;
+}
+
+.sec {
+  padding: 4rem 0;
+}
+
+.towcolumn {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .main {
+      width: 70%;
+    }
+    .side {
+      width: 28%;
+    }
+  }
+}

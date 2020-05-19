@@ -1,44 +1,33 @@
 <?php
 $home = esc_url(home_url());
-$wp_url = get_template_directory_uri();
+$wp_url = get_template_directory_uri().'/dist/';
 get_header(); ?>
-<section class="py-5">
-  <div class="container">
-    <div class="mb-5">
-      <h2>テキストカラー一覧</h2>
-      <p class="text-body">text-body</p>
-      <p class="text-primary">text-primary</p>
-      <p class="text-secondary">text-secondary</p>
-      <p class="text-info">text-info</p>
-      <p class="text-success">text-success</p>
-      <p class="text-warning">text-warning</p>
-      <p class="text-danger">text-danger</p>
-      <p class="text-light">text-light</p>
-      <p class="text-dark">text-dark</p>
-    </div>
-    <div class="mb-5">
-      <h2>ボタン一覧</h2>
-      <div class="mb-3">
-        <button class="mr-2 btn btn-primary">text-primary</button>
-        <button class="mr-2 btn btn-secondary">text-secondary</button>
-        <button class="mr-2 btn btn-info">text-info</button>
-        <button class="mr-2 btn btn-success">text-success</button>
-        <button class="mr-2 btn btn-warning">text-warning</button>
-        <button class="mr-2 btn btn-danger">text-danger</button>
-        <button class="mr-2 btn btn-light">text-light</button>
-        <button class="mr-2 btn btn-dark">text-dark</button>
-      </div>
-      <div class="mb-0">
-        <button class="mr-2 btn btn-outline-primary">text-primary</button>
-        <button class="mr-2 btn btn-outline-secondary">text-secondary</button>
-        <button class="mr-2 btn btn-outline-info">text-info</button>
-        <button class="mr-2 btn btn-outline-success">text-success</button>
-        <button class="mr-2 btn btn-outline-warning">text-warning</button>
-        <button class="mr-2 btn btn-outline-danger">text-danger</button>
-        <button class="mr-2 btn btn-outline-light">text-light</button>
-        <button class="mr-2 btn btn-outline-dark">text-dark</button>
-      </div>
-    </div>
-  </div>
+<section class="mv">
+<img class="w-100 border-0 img-switch" src="<?php echo $wp_url; ?>/images/mv_pc.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $wp_url; ?>/images/mv_pc.png 1x, <?php echo $wp_url; ?>/images/mv_pc@2x.png 2x">
 </section>
+<!-- mv -->
+
+<div class="towcolumn sec">
+<div class="container">
+<div class="main">
+<section class="read">
+<div class="read__wrap">
+<div class="read__wrap__inner">
+<h2 class="read__wrap__inner-ttl"><img src="<?php echo $wp_url; ?>/images/about_ttl_pc.png" alt="業者比較" srcset="<?php echo $wp_url; ?>/images/about_ttl_pc.png 1x, <?php echo $wp_url; ?>/images/about_ttl_pc@2x.png 2x"></h2>
+<div class="read__wrap__inner-star"><img src="<?php echo $wp_url; ?>/images/about_star.png" alt="星" srcset="<?php echo $wp_url; ?>/images/about_star.png 1x, <?php echo $wp_url; ?>/images/about_star@2x.png 2x"></div>
+<h3 class="read__wrap__inner-h3">あなたの内装解体業者探しをお手伝い</h3>
+<p class="read__wrap__inner-p">徹底した自社検証と専門家の声をもとにおすすめ情報を用意しました徹底した自社検証と専門家の声をもとにおすすめ情報を用意しました徹底した自社検証と専門家の声をもとにおすすめ情報を用意しました徹底した自社検証と専門家の声をもとにおすすめ情報を用意しました徹底した自社検証と専門家の声をもとにおすすめ情報を用意しました徹底した自社検証と専門家の声をもとにおすすめ情報を用意しました</p>
+</div>
+</div>
+</section>
+</div>
+<!-- main -->
+<div class="side">
+<?php get_sidebar(); ?>
+</div>
+<!-- side -->
+</div>
+<!-- container -->
+</div>
+<!-- towcolumn -->
 <?php get_footer();

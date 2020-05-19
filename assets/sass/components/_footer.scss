@@ -1,0 +1,26 @@
+.footer {
+  border-top: solid 1px $light;
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &-link {
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: $font-size-sm;
+        color: $dark;
+        margin-right: 1rem;
+        line-height: 1;
+      }
+    }
+    &-copy {
+      p {
+        line-height: 1;
+        margin: 0;
+        font-size: 12px;
+      }
+    }
+  }
+}

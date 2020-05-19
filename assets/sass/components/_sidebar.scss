@@ -1,0 +1,29 @@
+.side {
+  &__inner {
+    margin-bottom: 3rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-ttl {
+      position: relative;
+      font-size: 1rem;
+      font-weight: bold;
+      color: $white;
+      background-color: $primary;
+      box-sizing: border-box;
+      padding: 0.8em 1.5em;
+      line-height: 1;
+      text-align: center;
+      margin-bottom: 2em;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -15px;
+        border: 15px solid transparent;
+        border-top: 15px solid $primary;
+      }
+    }
+  }
+}

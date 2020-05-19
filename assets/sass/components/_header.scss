@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  text-align: center;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    &-img {
+      margin-right: 0.5rem;
+    }
+    &-ttl {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1;
+      a {
+        color: $black;
+        span {
+          background-color: $primary;
+          color: $white;
+          font-size: 1rem;
+          display: inline-block;
+          box-sizing: border-box;
+          margin-left: 0.5rem;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}

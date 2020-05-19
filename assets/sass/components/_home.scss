@@ -1,0 +1,33 @@
+.read {
+  &__wrap {
+    position: relative;
+    border: solid 2px $light;
+    box-sizing: border-box;
+    padding: 5px;
+    &__inner {
+      background-color: $secondary;
+      box-sizing: border-box;
+      padding: 1.5rem;
+      &-ttl {
+        position: absolute;
+        top: -2rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+      &-star {
+        text-align: center;
+        margin: 1rem 0;
+      }
+      &-h3 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+      }
+      &-p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
