@@ -30,3 +30,30 @@ p {
     }
   }
 }
+
+.btn {
+  position: relative;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5rem;
+  border-width: 2px;
+  padding: 0.5em 3em;
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%) rotate(45deg);
+    content: "";
+    display: block;
+    width: 0.3em;
+    height: 0.3em;
+    border-top: solid 1px $dark;
+    border-right: solid 1px $dark;
+  }
+  &-warning {
+    color: $white;
+    &::after {
+      border-color: $white;
+    }
+  }
+}
