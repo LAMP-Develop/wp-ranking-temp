@@ -35,11 +35,12 @@
         th {
           color: #6a6a6a;
           font-size: $font-size-sm;
-          padding-bottom: 1rem;
+          white-space: nowrap;
+          padding: 0.25rem;
         }
         td {
           font-size: $font-size-sm;
-          padding-bottom: 1rem;
+          padding: 0.25rem;
         }
       }
       &-term {
@@ -55,6 +56,68 @@
           padding: 5px 1rem;
           border-radius: 2px;
           margin-right: 5px;
+        }
+      }
+    }
+    &-more {
+      display: block;
+      margin: 1rem 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    &-contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .btn {
+        width: 49%;
+      }
+    }
+    &.first {
+      .merchant__inner-ttl {
+        background-color: $info;
+        border: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+        .ribbon {
+          position: relative;
+          background-color: $primary;
+          box-sizing: border-box;
+          padding: 1rem;
+          margin-right: 3rem;
+          &::after {
+            position: absolute;
+            right: -30.5px;
+            top: 0;
+            content: "";
+            display: block;
+            border-top: 30.5px solid transparent;
+            border-bottom: 30.5px solid transparent;
+            border-left: 30.5px solid $primary;
+          }
+        }
+      }
+      .merchant__inner__info {
+        box-sizing: border-box;
+        padding: 1rem;
+        border: solid 5px $info;
+        border-top: 0;
+      }
+      .merchant__inner__info-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .thumbnail {
+          width: 35%;
+        }
+        .merchant__inner__info-support {
+          width: 62%;
         }
       }
     }
