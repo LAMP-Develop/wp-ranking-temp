@@ -116,7 +116,7 @@
         &:last-of-type {
           margin-bottom: 0;
         }
-        h3 {
+        & > h3 {
           background-color: $warning;
           color: $white;
           box-sizing: border-box;
