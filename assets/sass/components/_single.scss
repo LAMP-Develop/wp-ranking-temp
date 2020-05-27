@@ -88,6 +88,19 @@
         line-height: 1;
         border: solid 2px $primary;
         border-right: 0;
+        @include media-breakpoint-down(md) {
+          width: 25%;
+          font-size: $font-size-sm;
+          padding: 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &:first-child {
+          @include media-breakpoint-down(md) {
+            width: 100%;
+          }
+        }
         &:last-child {
           border-right: solid 2px $primary;
         }
@@ -233,5 +246,22 @@
       font-size: $font-size-sm;
       margin: 0;
     }
+  }
+}
+
+#seotxt {
+  h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 2em 0 1em;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 2em 0 1em;
+  }
+  p {
+    font-size: $font-size-sm;
+    margin-bottom: 1em;
   }
 }

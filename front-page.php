@@ -23,6 +23,10 @@ get_header(); ?>
 
 <?php get_template_part('templates/merchant'); ?>
 
+<div id="seotxt" class="py-4 my-4 border-top">
+<?php the_content(); ?>
+</div>
+
 </div>
 <!-- main -->
 <div class="side">
