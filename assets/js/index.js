@@ -35,7 +35,7 @@ $(function ($) {
   });
 
   // スクロールイベント
-  $(window).on("scroll", function () {
-    let s = $(window).scrollTop();
-  });
+  // $(window).on("scroll", function () {
+  //   let s = $(window).scrollTop();
+  // });
 });

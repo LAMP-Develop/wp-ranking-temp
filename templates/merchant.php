@@ -9,7 +9,7 @@ $args = [
     'posts_per_page' => -1,
     'post_type' => 'merchant',
     'orderby' => 'date',
-    'order' => 'DESC'
+    'order' => 'ASC'
 ];
 $posts = get_posts($args);
 foreach ($posts as $post):
@@ -68,11 +68,29 @@ if ($temp === 1) {
 </div>
 <h4 class="merchant__inner-ttl4">概要</h4>
 <p class="merchant__inner-explanation"><?php echo $explanation; ?></p>
-<a class="merchant__inner-more" href="<?php echo $p; ?>">さらに詳しく見る</a>
+<div class="merchant__inner__point">
+<table>
+<tbody>
+<?php for ($i=1; $i <= 3; $i++): ?>
+<tr>
+<th><span>POINT<?php echo $i; ?></span><?php the_field('merchant_point_ttl_'.$i); ?></th>
+<td><?php the_field('merchant_point_txt_'.$i); ?></td>
+</tr>
+<?php endfor; ?>
+</tbody>
+</table>
+</div>
+<a class="merchant__inner-more" href="<?php echo $p; ?>">さらに詳しく見る<i class="fas fa-chevron-right text-success"></i></a>
+<div class="merchant__inner__cta">
+<a class="merchant__inner__cta-tel" href="tel:<?php echo $tel; ?>">
+<img class="img-switch" src="<?php echo $wp_url; ?>/images/btn_balloon_pc.png" alt="" srcset="<?php echo $wp_url; ?>/images/btn_balloon_pc.png 1x, <?php echo $wp_url; ?>/images/btn_balloon_pc@2x.png 2x">
+<span>TEL <?php echo $tel; ?></span></a>
+<a class="merchant__inner__cta-contact" href="<?php echo $url; ?>">フォームからお問い合わせ</a>
+</div>
 </div>
 </div>
 <?php elseif ($temp === 2 || $temp === 3): ?>
-<div class="merchant__inner">
+<div class="merchant__inner second">
 <h3 class="merchant__inner-ttl"><?php echo $name; ?></h3>
 <div class="merchant__inner__info">
 <table class="merchant__inner__info-support">
@@ -94,6 +112,7 @@ if ($temp === 1) {
 </div>
 <h4 class="merchant__inner-ttl4">概要</h4>
 <p class="merchant__inner-explanation"><?php echo $explanation; ?></p>
+<a class="merchant__inner-more" href="<?php echo $p; ?>">さらに詳しく見る<i class="fas fa-chevron-right text-success"></i></a>
 <div class="merchant__inner-contact">
 <a class="btn btn-warning" href="tel:<?php echo $tel; ?>">TEL <?php echo $tel; ?></a>
 <a class="btn btn-outline-dark" href="<?php echo $url; ?>">フォームからお問い合わせ</a>
@@ -123,6 +142,7 @@ if ($temp === 1) {
 </div>
 <h4 class="merchant__inner-ttl4">概要</h4>
 <p class="merchant__inner-explanation"><?php echo $explanation; ?></p>
+<a class="merchant__inner-more" href="<?php echo $p; ?>">さらに詳しく見る<i class="fas fa-chevron-right text-success"></i></a>
 <div class="merchant__inner-contact">
 <a class="btn btn-warning" href="tel:<?php echo $tel; ?>">TEL <?php echo $tel; ?></a>
 <a class="btn btn-outline-dark" href="<?php echo $url; ?>">フォームからお問い合わせ</a>

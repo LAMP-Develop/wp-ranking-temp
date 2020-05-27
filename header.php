@@ -17,7 +17,7 @@ $wp_url = get_template_directory_uri().'/dist/'; ?>
 <div class="conatiner">
 <div class="header__logo">
 <div class="header__logo-img"><img src="<?php echo $wp_url; ?>/images/logo_icon.png" alt="<?php bloginfo("name")?>" srcset="<?php echo $wp_url; ?>/images/logo_icon.png 1x, <?php echo $wp_url; ?>/images/logo_icon@2x.png 2x"></div>
-<h1 class="header__logo-ttl"><a href="<?php echo $home; ?>"><?php bloginfo("name")?><span>大阪</span></a></h1>
+<h1 class="header__logo-ttl"><a href="<?php echo $home; ?>">内装解体の<br class="d-md-none">業者・会社の比較サイト<span>大阪</span></a></h1>
 </div>
 </div>
 </header>
