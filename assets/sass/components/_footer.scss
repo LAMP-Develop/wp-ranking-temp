@@ -24,3 +24,24 @@
     }
   }
 }
+
+.fix-btn {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  @include media-breakpoint-down(md) {
+    display: block;
+    top: auto;
+    transform: none;
+    right: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.25rem;
+    background-color: $white;
+    text-align: center;
+  }
+}

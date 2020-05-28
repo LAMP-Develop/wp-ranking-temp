@@ -61,11 +61,13 @@ if ($temp === 1) {
 </tbody>
 </table>
 </div>
+<?php if (is_array($terms)): ?>
 <div class="merchant__inner__info-term">
 <?php foreach ($terms as $key => $term): ?>
 <span><?php echo $term->name; ?></span>
 <?php endforeach; ?>
 </div>
+<?php endif; ?>
 <h4 class="merchant__inner-ttl4">概要</h4>
 <p class="merchant__inner-explanation"><?php echo $explanation; ?></p>
 <div class="merchant__inner__point">
@@ -105,11 +107,13 @@ if ($temp === 1) {
 </tr>
 </tbody>
 </table>
+<?php if (is_array($terms)): ?>
 <div class="merchant__inner__info-term">
 <?php foreach ($terms as $key => $term): ?>
 <span><?php echo $term->name; ?></span>
 <?php endforeach; ?>
 </div>
+<?php endif; ?>
 <h4 class="merchant__inner-ttl4">概要</h4>
 <p class="merchant__inner-explanation"><?php echo $explanation; ?></p>
 <a class="merchant__inner-more" href="<?php echo $p; ?>">さらに詳しく見る<i class="fas fa-chevron-right text-success"></i></a>
@@ -135,11 +139,13 @@ if ($temp === 1) {
 </tr>
 </tbody>
 </table>
+<?php if (is_array($terms)): ?>
 <div class="merchant__inner__info-term">
 <?php foreach ($terms as $key => $term): ?>
 <span><?php echo $term->name; ?></span>
 <?php endforeach; ?>
 </div>
+<?php endif; ?>
 <h4 class="merchant__inner-ttl4">概要</h4>
 <p class="merchant__inner-explanation"><?php echo $explanation; ?></p>
 <a class="merchant__inner-more" href="<?php echo $p; ?>">さらに詳しく見る<i class="fas fa-chevron-right text-success"></i></a>
