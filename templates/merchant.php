@@ -55,7 +55,7 @@ if ($temp === 1) {
 <td><?php echo $area; ?></td>
 </tr>
 <tr>
-<th>建物の種類</th>
+<th>対応できる建物</th>
 <td><?php echo $genre; ?></td>
 </tr>
 </tbody>
@@ -87,7 +87,7 @@ if ($temp === 1) {
 <a class="merchant__inner__cta-tel" href="tel:<?php echo $tel; ?>">
 <img class="img-switch" src="<?php echo $wp_url; ?>/images/btn_balloon_pc.png" alt="" srcset="<?php echo $wp_url; ?>/images/btn_balloon_pc.png 1x, <?php echo $wp_url; ?>/images/btn_balloon_pc@2x.png 2x">
 <span>TEL <?php echo $tel; ?></span></a>
-<a class="merchant__inner__cta-contact" href="<?php echo $url; ?>">フォームからお問い合わせ</a>
+<a class="merchant__inner__cta-contact" href="<?php echo $url; ?>" target="_blank">フォームからお問い合わせ</a>
 </div>
 </div>
 </div>
@@ -102,7 +102,7 @@ if ($temp === 1) {
 <td><?php echo $area; ?></td>
 </tr>
 <tr>
-<th>建物の種類</th>
+<th>対応できる建物</th>
 <td><?php echo $genre; ?></td>
 </tr>
 </tbody>
@@ -119,7 +119,7 @@ if ($temp === 1) {
 <a class="merchant__inner-more" href="<?php echo $p; ?>">さらに詳しく見る<i class="fas fa-chevron-right text-success"></i></a>
 <div class="merchant__inner-contact">
 <a class="btn btn-warning" href="tel:<?php echo $tel; ?>">TEL <?php echo $tel; ?></a>
-<a class="btn btn-outline-dark" href="<?php echo $url; ?>">フォームからお問い合わせ</a>
+<a class="btn btn-outline-dark" href="<?php echo $url; ?>" target="_blank">フォームからお問い合わせ</a>
 </div>
 </div>
 </div>
@@ -134,7 +134,7 @@ if ($temp === 1) {
 <td><?php echo $area; ?></td>
 </tr>
 <tr>
-<th>建物の種類</th>
+<th>対応できる建物</th>
 <td><?php echo $genre; ?></td>
 </tr>
 </tbody>
@@ -151,7 +151,7 @@ if ($temp === 1) {
 <a class="merchant__inner-more" href="<?php echo $p; ?>">さらに詳しく見る<i class="fas fa-chevron-right text-success"></i></a>
 <div class="merchant__inner-contact">
 <a class="btn btn-warning" href="tel:<?php echo $tel; ?>">TEL <?php echo $tel; ?></a>
-<a class="btn btn-outline-dark" href="<?php echo $url; ?>">フォームからお問い合わせ</a>
+<a class="btn btn-outline-dark" href="<?php echo $url; ?>" target="_blank">フォームからお問い合わせ</a>
 </div>
 </div>
 </div>

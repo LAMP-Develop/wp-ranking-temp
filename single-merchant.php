@@ -65,7 +65,7 @@ if ($temp === 1) {
 <a class="merchant__inner__cta-tel" href="tel:<?php echo $tel; ?>">
 <img class="img-switch" src="<?php echo $wp_url; ?>/images/btn_balloon_pc.png" alt="" srcset="<?php echo $wp_url; ?>/images/btn_balloon_pc.png 1x, <?php echo $wp_url; ?>/images/btn_balloon_pc@2x.png 2x">
 <span>TEL <?php echo $tel; ?></span></a>
-<a class="merchant__inner__cta-contact" href="<?php echo $url; ?>">フォームからお問い合わせ</a>
+<a class="merchant__inner__cta-contact" href="<?php echo $url; ?>" target="_blank">フォームからお問い合わせ</a>
 </div>
 </div>
 <!-- merchant__inner__cta -->
@@ -163,28 +163,32 @@ if ($temp === 1) {
 </div>
 </div>
 <!-- menu3 -->
-<?php if (get_field('merchant_reviews_ttl_1')): ?>
 <div id="menu4" class="single__merchant__menu__inner">
 <h3>口コミ</h3>
 <div class="single__merchant__menu__inner__wrap">
 <div class="review">
+<?php if (get_field('merchant_reviews_ttl_1')): ?>
 <div class="review__inner">
 <h4><?php the_field('merchant_reviews_ttl_1'); ?></h4>
 <p><?php the_field('merchant_reviews_txt_1'); ?></p>
 </div>
+<?php endif; ?>
+<?php if (get_field('merchant_reviews_ttl_2')): ?>
 <div class="review__inner">
 <h4><?php the_field('merchant_reviews_ttl_2'); ?></h4>
 <p><?php the_field('merchant_reviews_txt_2'); ?></p>
 </div>
+<?php endif; ?>
+<?php if (get_field('merchant_reviews_ttl_3')): ?>
 <div class="review__inner">
 <h4><?php the_field('merchant_reviews_ttl_3'); ?></h4>
 <p><?php the_field('merchant_reviews_txt_3'); ?></p>
 </div>
+<?php endif; ?>
 </div>
 </div>
 </div>
 <!-- menu4 -->
-<?php endif; ?>
 <?php if (get_field('merchant_recommend')): ?>
 <div id="menu5" class="single__merchant__menu__inner">
 <h3>おすすめ情報</h3>
@@ -199,7 +203,7 @@ if ($temp === 1) {
 <a class="merchant__inner__cta-tel" href="tel:<?php echo $tel; ?>">
 <img class="img-switch" src="<?php echo $wp_url; ?>/images/btn_balloon_pc.png" alt="" srcset="<?php echo $wp_url; ?>/images/btn_balloon_pc.png 1x, <?php echo $wp_url; ?>/images/btn_balloon_pc@2x.png 2x">
 <span>TEL <?php echo $tel; ?></span></a>
-<a class="merchant__inner__cta-contact" href="<?php echo $url; ?>">フォームからお問い合わせ</a>
+<a class="merchant__inner__cta-contact" href="<?php echo $url; ?>" target="_blank">フォームからお問い合わせ</a>
 </div>
 </div>
 </div>
@@ -257,7 +261,10 @@ let radar_chart = new Chart(ctx, {
       scale: {
         ticks: {
           beginAtZero: true,
-          precision: 5
+          precision: 5,
+          min: 50,
+          max: 100,
+          stepSize: 10,
         }
       }
     }
