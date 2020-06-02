@@ -11,7 +11,14 @@ $wp_url = get_template_directory_uri().'/dist/'; ?>
 <?php endif; ?>
 <?php wp_head(); ?>
 <?php if (!is_user_logged_in()): ?>
-<!-- ここにGAトラッキングタグ -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168095299-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-168095299-1');
+</script>
 <?php endif; ?>
 </head>
 <body>

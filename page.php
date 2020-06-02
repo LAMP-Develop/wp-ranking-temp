@@ -4,7 +4,7 @@ $wp_url = get_template_directory_uri().'/dist/';
 get_header(); ?>
 <section class="mv-suv">
 <div class="container">
-<h2><span><?php echo $t; ?></span></h2>
+<h2><span><?php the_title(); ?></span></h2>
 </div>
 </section>
 <div class="towcolumn sec">
