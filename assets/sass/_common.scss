@@ -12,6 +12,15 @@ p {
   font-size: $font-size-sm;
 }
 
+table {
+  width: 100%;
+  th,
+  td {
+    vertical-align: top;
+    padding: $font-size-sm;
+  }
+}
+
 .sec {
   padding: 4rem 0;
 }
