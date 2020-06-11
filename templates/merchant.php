@@ -87,7 +87,7 @@ if ($temp === 1) {
 <a class="merchant__inner__cta-tel" href="tel:<?php echo $tel; ?>">
 <img class="img-switch" src="<?php echo $wp_url; ?>/images/btn_balloon_pc.png" alt="" srcset="<?php echo $wp_url; ?>/images/btn_balloon_pc.png 1x, <?php echo $wp_url; ?>/images/btn_balloon_pc@2x.png 2x">
 <span>TEL <?php echo $tel; ?></span></a>
-<a class="merchant__inner__cta-contact" href="<?php echo $url; ?>" target="_blank">フォームからお問い合わせ</a>
+<a class="merchant__inner__cta-contact" href="<?php echo $home; ?>/form/" target="_blank">フォームからお問い合わせ</a>
 </div>
 </div>
 </div>

@@ -7,7 +7,7 @@ $wp_url = get_template_directory_uri(); ?>
 <div class="container">
 <div class="footer__links">
 <div class="footer__links-link mb-md-0 mb-3">
-<!-- <a href="<?php echo $home; ?>/sitemap/">サイトマップ</a> -->
+<a href="<?php echo $home; ?>/company/">運営会社</a>
 <a href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
 <!-- <a href="<?php echo $home; ?>/">お問い合わせ</a> -->
 </div>
